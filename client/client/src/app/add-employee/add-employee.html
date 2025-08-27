@@ -1,0 +1,14 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Add a New Employee</mat-card-title>
+        <mat-card-subtitle>
+            <button mat-icon-button color="primary" (click)="goBack()" matTooltip="Back to Employee List">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <app-employee-form [buttonText]="'Add Employee'" (formSubmitted)="addEmployee($event)">
+        </app-employee-form>
+    </mat-card-content>
+</mat-card>
